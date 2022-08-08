@@ -6,10 +6,27 @@
 </head>
 <body>
 <script>
-    let a = prompt('Nhap so nam')
-    if (a % 4 == 0 && ! a % 100 == 0) alert('La nam nhuan')
-    if (a % 400 == 0 && a % 100 == 0) alert('La nam nhuan')
-    else alert('khong la nam nhuan')
+  let a = prompt('nhap so nam')
+  let b = false
+   if (a % 4==0) {
+       if (a % 100 == 0) {
+           if (a % 400 == 0) {
+               b = true;
+           }
+       }else {
+           b = true;
+       }
+   }
+  if (b) {
+      alert(a + " la nam nhuan");
+  } else {
+      alert(a + " la nam k nhuan");
+  }
+
+
+
+
+
 </script>
 </body>
 </html>
